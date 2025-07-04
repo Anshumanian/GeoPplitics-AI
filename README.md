@@ -1,90 +1,139 @@
-# GeoPplitics-AI
-Real-time geopolitical analysis powered by advanced Al algorithms and global intelligence networks
-GeoPolitics AI - Deep Analysis Bot
+# GeoPolitics AI - Deep Analysis Bot
 
-Developed for the Bolt New World Level Hackathon, this project showcases innovative use of AI for global awareness and decision-making. It empowers researchers, analysts, and policymakers with real-time geopolitical intelligence.
-An AI-powered platform offering real-time insights into global conflicts, national vulnerabilities, economic trends, and security threats.
+An advanced AI-powered geopolitical analysis platform providing real-time insights on global conflicts, country vulnerabilities, economic trends, and security threats.
 
-🔍 Core Features
+## Features
 
-🧠 AI-Powered Analysis
+### 🧠 AI-Powered Analysis
+- **ChatGPT Integration**: Real-time AI responses for geopolitical queries
+- **Deep Analysis Engine**: Comprehensive conflict and vulnerability assessments
+- **Smart Search**: Intelligent filtering across all data categories
+- **Real-time Updates**: Live monitoring of global situations
 
-ChatGPT Integration: Real-time, intelligent responses
-Deep Analysis Engine: Tracks conflicts and country vulnerabilities
-Smart Search: Filters data by region, severity, and type
-Live Updates: Monitors evolving global situations
+### 🌍 Global Coverage
+- **Active Conflicts**: 10+ ongoing conflicts with detailed tracking
+- **Vulnerability Assessment**: 10 countries analyzed across 8 dimensions
+- **Regional Analysis**: Coverage of all major geopolitical regions
+- **Economic Intelligence**: Trade wars, sanctions, and market impacts
 
-🌍 Global Coverage
+### 🔍 Analysis Categories
+- Military tensions and conflicts
+- Economic vulnerabilities and sanctions
+- Energy security and supply chains
+- Food security and climate impacts
+- Cyber warfare and digital threats
+- Political stability and governance
+- Social unrest and demographic challenges
 
-Conflicts: 10+ major disputes tracked with context
-Vulnerability Analysis: 10 countries across 8 key dimensions
-Regional Reports: Coverage includes South Asia, East Asia, Middle East, and more
-Economic Intelligence: Trade disputes, sanctions, and market dynamics
+## Setup Instructions
 
-🧭 Analysis Dimensions
+### 1. Clone and Install
+```bash
+git clone <repository-url>
+cd geopolitics-ai-bot
+npm install
+```
 
-Military tensions
-Economic sanctions
-Energy supply chains
-Food and climate risks
-Cyber threats
-Political stability
-Social unrest
+### 2. Configure OpenAI API (Optional but Recommended)
+1. Copy the environment file:
+   ```bash
+   cp .env.example .env
+   ```
 
-🤖 ChatGPT Integration
+2. Get your OpenAI API key:
+   - Visit [OpenAI Platform](https://platform.openai.com/api-keys)
+   - Create a new API key
+   - Copy the key
 
-The AI Assistant provides contextual analysis via GPT-4:
-With API Key:
-✅ Real-time AI analysis
-✅ Context-aware responses
-✅ Up-to-date data synthesis
-Fallback Mode (No API Key):
-✅ Local knowledge base
-✅ Static analysis and reporting
-✅ Reliable default assessments
-Security Reminder: In production, move API calls to a backend server with proper authentication, rate limits, and secure API key storage.
+3. Add your API key to `.env`:
+   ```
+   VITE_OPENAI_API_KEY=your_actual_api_key_here
+   ```
 
-🎯 Search & Filter Capabilities
-Intelligent search by topic, country, or region
-Filters: Region, severity level, category
-Dynamic counters and smart results
-Helpful guidance on empty states
+4. Restart the development server
 
-📊 Data Overview
- 
-Conflicts: Russia-Ukraine, India-Pakistan, China-India, North Korea, Iran-Israel
-Vulnerabilities: Economic, Military, Energy, Cyber, Food, Climate, Social, Political
-Regions: South Asia, East Asia, Middle East, Eastern Europe, Africa, Southeast Asia
+### 3. Start Development Server
+```bash
+npm run dev
+```
 
-💡 Usage Examples
+## ChatGPT Integration
 
-Chat Queries
-"Analyze India-Pakistan tensions"
-"North Korea's nuclear status?"
-"Assess Taiwan’s blockade risk"
-"Compare economic threats in South Asia"
+The GeoPolitics AI chatbot now features ChatGPT integration for enhanced responses:
 
-Smart Search
+### With API Key Configured:
+- ✅ Real-time ChatGPT responses
+- ✅ Context-aware conversations
+- ✅ Advanced geopolitical analysis
+- ✅ Up-to-date information synthesis
 
-Keywords: "Kashmir", "cyber warfare", "energy crisis"
-Filters: By region or severity
-Combine for precise insights
+### Without API Key (Fallback Mode):
+- ✅ Built-in knowledge base responses
+- ✅ Comprehensive conflict analysis
+- ✅ Vulnerability assessments
+- ✅ Regional expertise
 
-Additional feature: Debate mode
-                    Game mode
+### Security Note
+The current implementation uses browser-based API calls for development. In production:
+- Move API calls to your backend server
+- Implement proper authentication
+- Add rate limiting and usage monitoring
+- Secure API keys server-side
 
-🛠 Tech Stack
+## Key Features
 
-Frontend: React 18 + TypeScript
-Styling: Tailwind CSS
-Icons: Lucide React
-AI: OpenAI GPT-4 API
-Build Tool: Vite
-Routing: React Router DOM
+### 🎯 Smart Search & Filtering
+- Search across conflicts, countries, and analyses
+- Multi-dimensional filtering (region, severity, type)
+- Real-time results with counters
+- No-results states with helpful guidance
 
-📝 License
+### 📊 Comprehensive Data
+- **Conflicts**: Russia-Ukraine, India-Pakistan, China-India, North Korea, Iran-Israel, and more
+- **Vulnerabilities**: Military, Economic, Energy, Food, Cyber, Climate, Social, Political
+- **Regions**: South Asia, East Asia, Middle East, Eastern Europe, Africa, Southeast Asia
 
-Licensed under the MIT License.
+### 🤖 AI Assistant
+- Powered by ChatGPT-4 for advanced analysis
+- Specialized in geopolitical intelligence
+- Context-aware conversations
+- Fallback knowledge base for reliability
 
-⚠ Disclaimer
-This tool is for educational and research purposes. Geopolitical information should always be verified through credible and official sources.
+## Technology Stack
+
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **AI**: OpenAI GPT-4 API
+- **Build Tool**: Vite
+- **Routing**: React Router DOM
+
+## Usage Examples
+
+### Chat with AI Assistant
+- "Analyze the current India-Pakistan tensions"
+- "What are North Korea's nuclear capabilities?"
+- "Assess Taiwan's vulnerability to blockade"
+- "Compare economic risks in South Asia"
+
+### Search & Filter
+- Search: "Kashmir", "nuclear", "energy crisis"
+- Filter by region: South Asia, Middle East, etc.
+- Filter by severity: Critical, High, Medium, Low
+- Combine filters for precise results
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Disclaimer
+
+This application is for educational and research purposes. Geopolitical analysis should be verified with multiple sources and official intelligence reports.
